@@ -4,7 +4,11 @@
   "description": "> Build AI-powered web apps in seconds, not days.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/core/index.js",
+    "dev": "nodemon examples/basic.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "format": "prettier --write 'src/**/*.js'"
   },
   "keywords": [],
   "author": "",
